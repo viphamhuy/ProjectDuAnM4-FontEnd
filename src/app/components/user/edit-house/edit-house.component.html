@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-3" >
+    <button class="btn btn-primary"  routerLink="/user">Quay về</button>
+  </div>
+  <div class="col-6">
+    <div *ngIf="isShow"
+         class="alert {{ (isSuccess) ? 'alert-success' : 'alert-danger' }}"
+         role="alert">
+      {{message}}
+    </div>
+
+    <form [formGroup]="formGroup">
+      <div class="form-group">
+        <label for="tenNha">Tên nhà</label>
+        <input formControlName="tenNha" type="text" class="form-control" id="tenNha" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="diaChi">Địa chỉ</label>
+        <input formControlName="diaChi" type="text" class="form-control" id="diaChi">
+      </div>
+      <div class="form-group">
+        <label for="soLuongPhongNgu">Số lượng phòng ngủ</label>
+        <input formControlName="soLuongPhongNgu" type="text" class="form-control" id="soLuongPhongNgu">
+      </div>
+      <div class="form-group">
+        <label for="soLuongPhongTam">Số lượng phòng tắm</label>
+        <input formControlName="soLuongPhongTam" type="text" class="form-control" id="soLuongPhongTam">
+      </div>
+      <div class="form-group">
+        <label for="moTaChung">Mô tả chung</label>
+        <input formControlName="moTaChung" type="text" class="form-control" id="moTaChung">
+      </div>
+      <div class="form-group">
+        <label for="giaTienTheoDem">Giá tiền theo đêm</label>
+        <input formControlName="giaTienTheoDem" type="text" class="form-control" id="giaTienTheoDem">
+      </div>
+      <div class="form-group">
+        <label for="trangThai">Trạng thái</label>
+        <input formControlName="trangThai" type="text" class="form-control" id="trangThai">
+      </div>
+      <div class="form-group">
+        <label>Loại nhà</label>
+        <select type="text"  formControlName="categoryHouseId">
+          <option  *ngFor="let s of categoryHouseList" value="{{s.id}}">{{s.name}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Loại phòng</label>
+        <select type="text"  formControlName="categoryRoomId">
+          <option  *ngFor="let s of categoryRoomList" value="{{s.id}}">{{s.name}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button (click)="edit()" class="btn btn-primary">Sửa thông tin</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-3"></div>
+</div>
