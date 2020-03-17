@@ -19,6 +19,7 @@ import { EditHouseComponent } from './user/edit-house/edit-house.component';
 
 
 
+
 @NgModule({
   declarations: [
     // tslint:disable-next-line:max-line-length

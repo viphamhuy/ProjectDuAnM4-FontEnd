@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "M4-FE": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "M4-FE"
+    }
+  },
+  "defaultProject": "M4-FE",
+  "cli": {
+    "analytics": "3a4aa7df-725b-4fed-8b75-ca70e02cb9c4"
+  }
 }

@@ -61,5 +61,4 @@ export class AddHouseComponent implements OnInit {
       this.formGroup.reset();
     });
   }
-
 }
