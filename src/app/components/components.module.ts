@@ -16,13 +16,14 @@ import { UserComponent } from './user/user.component';
 import { HouseListComponent } from './user/house-list/house-list.component';
 import { AddHouseComponent } from './user/add-house/add-house.component';
 import { EditHouseComponent } from './user/edit-house/edit-house.component';
+import { ShowDetailsComponent } from './homepage/show-details/show-details.component';
 
 
 
 @NgModule({
   declarations: [
     // tslint:disable-next-line:max-line-length
-    ComponentsComponent, BodyNewsComponent, HomepageComponent, FooterComponent, HotNewsComponent, MenuBarComponent, SideBarComponent, UserComponent, HouseListComponent, AddHouseComponent, EditHouseComponent],
+    ComponentsComponent, BodyNewsComponent, HomepageComponent, FooterComponent, HotNewsComponent, MenuBarComponent, SideBarComponent, UserComponent, HouseListComponent, AddHouseComponent, EditHouseComponent, ShowDetailsComponent],
   imports: [
     CommonModule,
     ComponentsRoutingModule,

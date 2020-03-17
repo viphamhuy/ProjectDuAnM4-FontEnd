@@ -1,0 +1,14 @@
+<form [formGroup]="formGroup">
+  <div class="form-group">
+    <label><span class="req">* </span> Loại nhà: </label>
+    <select type="text" name="categoryHouseId" formControlName="categoryHouseId" readonly>
+      <option *ngFor="let i of categoryHouseList" value="{{i.id}}" >Loại nhà: {{i.name}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label><span class="req">* </span> Loại phòng: </label>
+    <select type="text" name="categoryRoomId" formControlName="categoryRoomId" readonly>
+      <option *ngFor="let i of categoryRoomList" value="{{i.id}}" >Loại phòng: {{i.name}}</option>
+    </select>
+  </div>
+</form>
